@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body >
+    <div class="Main-page">
+        <!-- Header Section -->
+        <div class="headerSection">
+            <p>We cannot live without food, and our chef is our mom. The biggest task for her is deciding what to cook today. This website is designed for moms, providing a variety of food items and offering random dish suggestions to users.</p>
+            <div class="dropDown">
+                <button onclick="dropFunction()" class="dropDownBtn">
+                    <input type="text" placeholder="Search.." id="input" ></button>
+                    <div class="dropDown-Content" id="dropDown-Content">
+                        <div class="categories">
+                            <a class="category">Breakfast</a>
+                            <a class="category">Chicken</a>
+                            <a class="category">Dessert</a>
+                            <a class="category">Mutton</a>
+                            <a class="category">Lunch</a>
+                            <a class="category">Dinner</a>
+                            <a class="category">Mid-day Cravings</a>
+                            <a class="category">Starters</a>
+                            <a class="category">Hot & Cold Drinks</a>
+                            <a class="category">Vegetarian</a>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+
+        <!-- Random Meal - Section -->
+        <div class="RandomMeal" >
+            <div id="randomMeal">
+                <div id ="randomMealName"></div>
+            </div>
+            <div class="model-content" id="model-content">
+                <span class="close" id="close">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+
+        <!-- List of searched meal categories - Section -->
+        <div class="SearchMeal">
+            <div class="SearchMealCategory" id="SearchMealCategory"></div>
+            
+            <div class="search-meal-wraper" id="search-meal-wraper">
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./app.js">
+    
+</script>
+  </body>
+</html>
